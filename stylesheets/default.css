@@ -1,0 +1,160 @@
+body {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 100%;
+}
+
+.container {
+	min-height: 100%;
+	margin-bottom: 200px; /* must be same height as footer */
+}
+
+header {
+	height: 70px;
+	background: whitesmoke;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+}
+
+.navbar {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display:inline;
+}
+
+.navbar a {
+    display:inline-block;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Passion One';
+    font-size: 150%;
+    font-color: black;
+    text-decoration: none;
+}
+
+.banner {
+	font-family: 'Lobster';
+	font-size: 250%;
+  	text-align: center;
+  	width: 100%;
+  	height: 400px;
+  	position: fixed;
+  	background: white;
+}
+
+#welcome {
+	position: relative;
+  	top: 40%;
+  	transform: translateY(-40%);
+}
+
+.content {
+	width: 100%;
+	height: 800px;
+	position: relative;
+	background: whitesmoke;
+	text-align: center;
+	top: 400px;
+}
+
+footer {
+	width: 100%;
+	height: 260px; /* must be same height as 'container' bottom margin */
+	z-index: 10;
+	position: relative;
+	bottom: -5px;
+	background: white;
+	margin-top: 100px;
+
+}
+
+.links {
+	width: 100%;
+	height: 90px;
+}
+
+.footerContainer {
+	position: relative;
+	width: 100%;
+	height: 60px;
+	margin-top: 100px;
+	background: whitesmoke;
+}
+
+profile {
+	background: url(imgs/IMG_0750.jpg) no-repeat;
+	position: absolute;
+}
+
+.footerNav {
+	list-style: none;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footerNav li {
+    display:inline;
+}
+
+.footerNav a {
+    display:inline-block;
+    padding: 15px;
+}
+
+#greeting {
+	font-family: 'Oxygen';
+	font-size: 200%;
+	position: relative;
+  	top: 30%;
+  	transform: translateY(-30%);
+}
+
+footer h2 {
+	font-family: 'Lobster';
+	font-size: 200%;
+}
+
+footer h3 {
+	font-family: 'Oxygen';
+	font-size: 100%;
+}
+ 
+#art {
+	font-family: 'Shadows Into Light';
+	font-color: black;
+}
+
+#copyright {
+	font-family: 'Oxygen';
+	font-size: 50%;
+	font-color: black;
+}
+
+
+{
+	background-image: url(../../../desktop/IMG_0029.jpg);
+	background-repeat: repeat-y;
+	background-position: center right;
+	background-attachment: scroll;
+}
+
+
+  		

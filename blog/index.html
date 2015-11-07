@@ -2,57 +2,53 @@
 <html>
 <head lang="en">
     <link href='https://fonts.googleapis.com/css?family=Lobster|Passion+One|Shadows+Into+Light|Oxygen' rel='stylesheet' type='text/css'>
-    	<style type="text/css">
-			.top_nav {font-family: 'Passion One', cursive;
-				font-weight: 400;}
-			.greeting {font-family: 'Lobster', cursive;
-  				font-weight: 400;}
-			.body {font-family: 'Oxygen', sans-serif;
-				font-weight: 400;}
-  			#art_credit {font-family: 'Shadows Into Light', cursive;
-  				font-weight: 400;}
-  			#links {font-size: 80%;}
-  			#copyright {font-family: 'Oxygen', sans-serif;
-				font-weight: 400;
-				font-size: 20%;}
-  		</style>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+   
     <meta charset="UTF-8">
-	<title>Luis's Blog Posts</title>
+  <title>Luis's Blog Posts</title>
 </head>
-    <main>
+  <body>
+    <div class="container">
       <header>
-      <nav class="top_nav">
-        <p><a href="../index.html">Home</a></p>
-        <p><a href="#">Projects</a></p>
-        <p><a href="#">Blog</a></p>
-        <p><a href="#">About Me</a></p>
-        <p><a href="#">Other Projects</a></p>
-        <p><a href="#">Resume</a></p>
-        <p><a href="#">Contact</a></p>
-        </nav>
-      </header>
-      <section>
-        <h1 class="greeting">'My Blog Posts!'</h1>
-        <div class="body">
-          <ul>
-            <li><a href="git.html"> My first blog post! Friday 10-23-15</a></li>
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Other Projects</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
+        </header> <!-- HEADER -->
+        <main>
+          <div class="banner">
+            <h1 id="welcome">'Check out my blog posts!'</h1>
+          </div>
+
+        <div class="content">
+          <h4>'(insert blog posts from blog-template.html)'</h4>
         </div>
-      </section>
+      </main> <!-- MAIN CONTENT -->
+    </div>
       <footer>
-        <img src="../imgs/IMG_0750.jpg" alt="my profile pic">
-        <section>
-          <h3 class="greeting">'Interested in what I'm doing?'</h3>
-          <nav>
-            <p id="links" class="body">Follow me on Facebook, Twitter, LinkedIn, and Instagram!</p>
-            <a href="#"><img src="../imgs/facebook2.png" alt="facebook"></a>
-            <a href="#"><img src="../imgs/twitter.png" alt="twitter"></a>
-            <a href="#"><img src="../imgs/linkedin.png" alt="linkedin"></a>
-            <a href="#"><img src="../imgs/instagram.png" alt="instagram"></a>
-          </nav>
-        </section>
-        <p id="art_credit">Art and Illustrations by ####</p>
-        <p id="copyright">Copyright &copy; 2015 | Luis De Castro</p>
-    </footer>
-    </main>
+        <div class="links">
+          <h2>'Interested in what I'm doing?'</h2>
+          <h3>Follow me on Facebook, Twitter, LinkedIn, and Instagram!</h3>
+        </div>
+          <ul class="footerNav">
+            <li><a href="#"><img src="../imgs/facebook2.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="../imgs/twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="../imgs/linkedin.png" alt="linkedin"></a></li>
+            <li><a href="#"><img src="../imgs/instagram.png" alt="instagram"></a></li>
+          </ul>
+
+        <div class="footerContainer">
+          <p id="art">Art and Illustrations by ####</p>
+          <p id="copyright">Copyright &copy; 2015 | Luis De Castro</p>
+        </div>
+
+        
+      </footer> <!-- FOOTER -->
+  </body> 
 </html>
