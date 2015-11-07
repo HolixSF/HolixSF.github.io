@@ -2,7 +2,7 @@ Here is the link to [my website](http://HolixSF.github.io/ "Luis's website")!
 
 What did you learn about CSS padding, borders, and margin by doing this challenge?
 
-	I learned that everything is just a box within a box. Kinda like a box of inceptions haha. I learned that padding is the space between an element and its border. The border is the space between the padding and the margin, and the margin is the space between the border and the page!
+```	I learned that everything is just a box within a box. Kinda like a box of inceptions haha. I learned that padding is the space between an element and its border. The border is the space between the padding and the margin, and the margin is the space between the border and the page! ```
 
 What did you learn about CSS positioning?
 
