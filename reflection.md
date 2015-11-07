@@ -1,4 +1,4 @@
-This is [my website](http://HolixSF.github.io/ "Luis's website") my website!
+Here is the link to [my website](http://HolixSF.github.io/ "Luis's website")!
 
 What did you learn about CSS padding, borders, and margin by doing this challenge?
 
