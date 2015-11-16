@@ -1,7 +1,7 @@
 .postContainer {
 	font-family: 'Oxygen';
 	font-size: 100%;
-	text-align: center;
+	text-align: justify;
 	list-style-type: none;
 	text-decoration: none;
 	padding-top: 10px;
@@ -14,4 +14,24 @@
 .postContainer p img {
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+.postContainer p {
+	color: whitesmoke;
+}
+
+.postContainer a:link {
+	color: #bc9055;
+}
+
+.postContainer a:visited {
+	color: #666666;
+}
+
+.postContainer a:active {
+	color: whitesmoke;
+}
+
+.posts {
+	color: whitesmoke;
 }

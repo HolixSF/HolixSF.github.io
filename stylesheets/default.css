@@ -8,12 +8,12 @@ body {
 
 .container {
 	min-height: 100%;
-	margin-bottom: 410px; /* must be same height as footer */
+	margin-bottom: 500px; /* must be same height as footer */
 }
 
 header {
 	height: 70px;
-	background: whitesmoke;
+	background: #2c2c2c;
 	width: 100%;
 	z-index: 10;
 	position: fixed;
@@ -45,14 +45,30 @@ header {
     text-decoration: none;
 }
 
+.navbar a:link {
+	color: #bc9055;
+}
+
+.navbar a:visited {
+	color: #666666;
+}
+
+.navbar a:active {
+	color: whitesmoke;
+}
+
 .banner {
-	font-family: 'Lobster';
-	font-size: 250%;
-  	text-align: center;
-  	width: 100%;
-  	height: 400px;
-  	position: fixed;
-  	background: white;
+    font-family: 'Lobster';
+    font-size: 250%;
+    color: white;
+    text-align: center;
+    text-shadow: -3px -3px 2px #191919;
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    background-image: url("../imgs/alpina.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #welcome {
@@ -65,28 +81,32 @@ header {
 	width: 100%;
 	height: 800px;
 	position: relative;
-	background: whitesmoke;
+	background: #2c2c2c;
 	text-align: center;
-	top: 400px;
+	top: 500px;
 	overflow: auto;
 	min-height: 100%;
 	float: initial;
 }
 
 footer {
-	width: 100%;
-	height: 200px;/* must be same height as 'container' bottom margin */
-	z-index: 10;
-	position: relative;
-	background: white;
-	bottom: 0;
-	margin-top: 50px;
-	clear: both;
+    width: 100%;
+    height: 180px;
+    z-index: 10;
+    position: relative;
+    color: #bc9055;
+    background-image: url("../imgs/kevin_doodle1.jpg");
+    background-size: contain;
+    background-position: left;
+    bottom: 0;
+    margin-top: 50px;
+    clear: both;
 }
 
 .links {
 	width: 100%;
 	height: 90px;
+	text-shadow: -1px 1px 1px black;
 }
 
 .footerContainer {
@@ -94,7 +114,7 @@ footer {
 	width: 100%;
 	height: 60px;
 	margin-top: auto;
-	background: whitesmoke;
+	background: #2c2c2c;
 	bottom: 0;
 }
 
@@ -126,7 +146,8 @@ profile {
 
 #greeting {
 	font-family: 'Oxygen';
-	font-size: 200%;
+	color: whitesmoke;
+	font-size: 250%;
 	position: relative;
   	top: 30%;
   	transform: translateY(-30%);
