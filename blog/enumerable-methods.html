@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Passion+One|Shadows+Into+Light|Oxygen' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+   
+    <meta charset="UTF-8">
+  <title>Blog Posts</title>
+</head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Other Projects</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </header> <!-- HEADER -->
+        <main>
+          <div class="banner">
+            <h1 id="welcome">Enumerabararaalesss..</h1>
+          </div>
+
+        <div class="content">
+          <ul class="postContainer">
+            <li class="posts">
+              <h3>Enumerables and map!</h3>
+                <h4>Saturday, November 21, 2015</h4>
+                <p>The weeks are getting harder and harder! This time we are in our second week of coding with Ruby and what a week it was. This week got a bit more advanced and a bit more confusing but im slowly understanding things. Lets talk Enumerables. Yeah its kinda hard to say at first that why my title was like that haha. Ruby's enumerable module has built in methods for all kinds of things which operate in a collection. Its like trying to use the "each" method when trying to iterate over something but there is a enumerable that does this for what you want to do. So what does enumerable actually mean? The Enumerable module gives objects of collection classes additional collection-specific behaviors. The class requiring the Enumerable module must have an #each method because the additional collection-specific behaviors given by Enumerable are defined in terms of #each. Lets give you an example of one of the enumerable methods, map!</p>
+                <p>What is map? The map method takes an enumerable object and a block, and runs the block for each element, outputting each returned value from the block. Map can be used non-destructively and destructively by implementing a "!" symbol after it. Basically lets say you have an array of strings and you want to iterate over those strings one by one and add to them or change them.</p>
+                <pre>my_array = ["a","b,"c"]  # Here we have an array with 3 string elements</pre>
+                <pre>my_array.map{ |i| puts i + !} # We use .map on our array to iterate through the array and add a "!" to each string in the array</pre>
+                <pre>#=> ["a!", "b!" ,"c!"]  # This is what we get in return</pre>
+                <p>So as you can see, instead of using .each we just used .map. There are other methods similar to this in which you can iterate and modify the given object. So why not use .each like we always do? The difference is .each executes the given block for each element of the array, then returns the array itself. While .map also executes the given block for each element of the array, but returns a new array whose values are the return values of each iteration of the block. Collect is also an enumerable and does the same thing as what map does. Like everything else in Ruby there are more ways than 1 to do things.</p>
+              </li>
+            </ul>
+        </div>
+      </main> <!-- MAIN CONTENT -->
+    </div>
+      <footer>
+        <div class="links">
+          <h2>'Interested in what I'm doing?'</h2>
+          <h3>Follow me on Facebook, Twitter, LinkedIn, and Instagram!</h3>
+        </div>
+          <ul class="footerNav">
+            <li><a href="https://www.facebook.com/luis.decastro.52"><img src="../imgs/facebook2.png" alt="facebook"></a></li>
+            <li><a href="https://twitter.com/Holix_SF"><img src="../imgs/twitter.png" alt="twitter"></a></li>
+            <li><a href="https://www.linkedin.com/in/luis-de-castro-b1627b82"><img src="../imgs/linkedin.png" alt="linkedin"></a></li>
+            <li><a href="https://www.instagram.com/holix_sf/"><img src="../imgs/instagram.png" alt="instagram"></a></li>
+          </ul>
+
+        <div class="footerContainer">
+          <h5>Art and Illustrations by Kevin Kleine<h5>
+          <h6>Copyright &copy; 2015 | Luis De Castro<h6>
+        </div>
+      </footer> <!-- FOOTER -->
+  </body> 
+</html>
