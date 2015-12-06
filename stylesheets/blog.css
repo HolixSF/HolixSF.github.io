@@ -36,17 +36,18 @@
 	color: whitesmoke;
 }
 
-/*.snippets {
-	background: #f8f8f8;
- 	overflow:auto;
- 	width:auto;
- 	border:solid gray;
- 	border-width:.1em .1em .1em .8em;
- 	padding:.2em .6em;
+pre {
+	padding: 0.5em;
+	margin: 1em auto;
+	width: 80%; 
+	background-color: #666666;
+	opacity: 0.7;
+	border-radius: 10px;
 }
 
-.snippets pre {
-	margin: 0; 
-	line-height: 125%;
-}*/
+code {
+	padding: 0.5em;
+	font-family: Monospace;
+	color: #bc9055;
+}
 

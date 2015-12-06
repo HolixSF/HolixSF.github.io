@@ -33,43 +33,29 @@
                 <h4>Sunday, November 30, 2015</h4>
                 <p>So the holidays are starting and I am finding that keeping up with DBC is starting to get difficult. It didn't think that it would require so much of my time but every week seems to get harder and harder. This week was out third week of learning Ruby and it was during Thanksgiving and all the ridiculous Black Friday sales. I think the best part of this week was learning about Ruby classes.</p>
                 <p>During the beginning I learned that everything in Ruby is an object. Everything we have been learning originally stems from an object. We learned to add methods and create properties to already existing objects. Now we can create those objects and add our own methods and properties by creating a new object class. We can start a new class using this syntax</p>
-                <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #880000">class</span> <span style="color: #880000">Person</span>
-
-
-<span style="color: #008000; font-weight: bold">end</span>
-</pre></div>
-
+                <pre><code>class Person
+ end</code></pre>
                 <p>We will use this example to create our new Person class. When creating a class we can give it an auto setup or some sort of code that automatically gives that class some properties. In Ruby we call this a constructor method. When creating a class the contructor method is named initialize and we can go ahead and put some properties to our Person class using this method.</p>
-                <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">Person</span>
-  
-  <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">initialize</span><span style="color: #008000">(name, age)</span>
-    <span style="color: #19177C">@name</span> <span style="color: #666666">=</span> <span style="color: #008000">name</span>
-    <span style="color: #19177C">@age</span> <span style="color: #666666">= <span style="color: #008000">age</span></span>
-
-<span style="color: #008000; font-weight: bold">end</span>
-</pre></div>
-
+                <pre><code>class Person
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+ end</code></pre>
                 <p>Now we have some properties, name and age, to our Person class. You may have noticed that theres an '@' symbol there. That creates an instance variable, which we can use throughout the instance of this class. Pretty cool huh. Now we can create instance methods and use the instance variables we just made. Like this!</p>
-                <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">greet</span>
-
-  <span style="color: #BA2121">&quot;</span><span style="color: #BB6688; font-weight: bold">#{</span><span style="color: #19177C">@name</span><span style="color: #BB6688; font-weight: bold">}</span><span style="color: #BA2121"> says, &#39;Hello there!&#39;&quot;</span>
-
-<span style="color: #008000; font-weight: bold">end</span>
-</pre></div>
+                <pre><code>def greet
+  "#{@name} says, 'Hello there!'"
+ end</code></pre>
 
                 <p>Now that we have created our class, given it some properties and made a method to use those properties, lets see how we can use these. We can now create a new instance of our class below and call the method we created.</p>
-                <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #666666">new_person = </span><span style="color: #880000">Person</span><span style="color: #666666">.new(</span><span style="color: #BA2121">&quot;James&quot;,</span><span style="color: #666666"> 25)</span>
-<span style="color: #408080; font-style: italic">#this will create an instance of our Person class</span>
-
-<span style="color: #666666">new_person.greet</span>
-<span style="color: #408080; font-style: italic">#this will call the greet method on the new instance of Person</span>
-<span style="color: #408080; font-style: italic">#this will return as:</span>
-<span style="color: #408080; font-style: italic">#=&gt; James says, &#39;Hello there!&#39;</span>
-</pre></div>
+                <pre><code>Person.new("James", 25)
+ #this will create an instance of our Person class
+ new_person.greet
+ #this will call the greet method on the new instance of Person
+ #this will return as:
+ #James says, 'Hello there!'</code></pre>
                 <p>As you can see creating classes is very useful in Ruby. It allows us create instances so that we don't have to keep repeating code. A class is like the blueprint for any object we create so having that blueprint allows us to create or modify that object multiple times. I hope I explained classes simple enough to understand. I wanted to go over the basics so we can have a good foundation on creating a class. I can always expand on this so let me know!</p>
-
-
-              </li>
+             </li>
             </ul>
         </div>
       </main> <!-- MAIN CONTENT -->
