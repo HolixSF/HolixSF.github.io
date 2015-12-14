@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 100%;
+	background: black;
+}
+
+header {
+	background: whitesmoke;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+
+footer {
+	background: whitesmoke;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+
+section {
+	background: whitesmoke;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+
+section h2 {
+	text-align: center;
+}
+section h5 {
+	text-align: center;
+}
+section li {
+	display: inline;
+	width: 200px;
+}
+section li h3 {
+	text-align: center;
+}
+
+pre {
+	text-align: center;
+	font-weight: 800;
+	padding: 0.5em;
+	margin: 1em auto;
+	width: 30%; 
+	background-color: #666666;
+	opacity: 0.7;
+	border-radius: 10px;
+}
