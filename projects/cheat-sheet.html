@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="cheat-sheet.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+	<title>Cheat Sheet</title>
+</head>
+<body>
+	<header>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	</header>
+	<!-- GIT -->
+	<section>
+		<h2>GIT CHEAT SHEET</h2>
+		<ul>
+			<li>
+				<h3>CREATE</h3>
+					<h5>Clone an existing repository</h5>
+						<pre>git clone ssh://user@domain.com/repo.git
+						</pre>
+					<h5>Create a new local repository</h5>
+						<pre>git init
+						</pre>
+			</li>
+			<li>
+				<h3>LOCAL CHANGES</h3>
+					<h5>Changed files in your working directory</h5>
+						<pre>git status
+						</pre>
+					<h5>Changes to tracked files</h5>
+						<pre>git diff
+						</pre>
+					<h5>Add all current changes to the next commit</h5>
+						<pre>git add
+						</pre>
+					<h5>Add some changes in <'file'> to the next commit</h5>
+						<pre>git add -p <'file'>
+						</pre>
+					<h5>Commit all local changes in tracked files</h5>
+						<pre>git commit -a
+						</pre>
+					<h5>Commit previously staged changes</h5>
+						<pre>git commit
+						</pre>
+					<h5>Change the last commit(dont amend published commits)</h5>
+						<pre>git commit --amend
+						</pre>	
+			</li>
+			<li>
+				<h3>COMMIT HISTORY</h3>
+					<h5>Show all commits, starting with newest</h5>
+						<pre>git log
+						</pre>
+					<h5>Show changes over time for a specific file</h5>
+						<pre>git log -p <'file'>
+						</pre>
+			</li>
+			<li>
+				<h3>BRANCHES & TAGS</h3>
+					<h5>List all existing branches</h5>
+						<pre>git branch -av
+						</pre>
+					<h5>Switch HEAD branch</h5>
+						<pre>git checkout <'branch'>
+						</pre>
+					<h5>Create a new branch based on your current HEAD</h5>
+						<pre>git branch <'new-branch'>
+						</pre>
+					<h5>Create a new tracking branch based on a remote branch</h5>
+						<pre>git checkout --track <'remote/branch'>
+						</pre>
+					<h5>Delete local branch</h5>
+						<pre>git branch -d <'branch'>
+						</pre>
+					<h5>Mark the current commit with a tag</h5>
+						<pre>git tag <'tag-name'>
+						</pre>	
+			</li>
+			<li>
+				<h3>UPDATE & PUBLISH</h3>
+					<h5>List all currently configured remotes</h5>
+						<pre>git remote -v
+						</pre>
+					<h5>Show information about a remote</h5>
+						<pre>git remote show <'remote'>
+						</pre>
+					<h5>Add new remote repository, named <'remote'></h5>
+						<pre>git remote add <'shortname'> <'url'>
+						</pre>
+					<h5>Download all changes from <'remote'>, but dont integrate into HEAD<h5>
+						<pre>git fetch <'remote'>
+						</pre>
+					<h5>Download changes and directly merge/integrate into HEAD</h5>
+						<pre>git pull <'remote'> <'branch'>
+						</pre>
+					<h5>Publish local changes on a remote</h5>
+						<pre>git push <'remote'> <'branch'>
+						</pre>
+					<h5>Delete a branch on the remote</h5>
+						<pre>git branch -dr <'remote/branch'>
+						</pre>
+					<h5>Publish your tags</h5>
+						<pre>git push --tags
+						</pre>		
+			</li>
+			<li>
+				<h3>MERGE & REBASE</h3>
+					<h5>Merge <'branch'> into your current HEAD</h5>
+						<pre>git merge <'branch'>
+						</pre>
+					<h5>Rebase your current HEAD onto <'branch'>(dont rebase published commits!)</h5>
+						<pre>git rebase <'branch'>
+						</pre>
+					<h5>Abort a rebase</h5>
+						<pre>git rebase --abort
+						</pre>
+					<h5>Continue a rebase after resolving conflicts</h5>
+						<pre>git rebase --continue
+						</pre>
+					<h5>Use your configured merge tool to solve conflicts</h5>
+						<pre>git mergetool
+						</pre>
+					<h5>Use your editor to manually solve conflicts and (after resolving) mark file as resolved</h5>
+						<pre>git add <'resolved-file'></pre>
+						<pre>git rm <'resolved-file'>
+						</pre>	
+			</li>
+			<li>
+				<h3>UNDO</h3>
+					<h5>Discard all local changes in your working directory</h5>
+						<pre>git reset --hard HEAD
+						</pre>
+					<h5>Discard local chages in a specific file</h5>
+						<pre>git checkout HEAD <'file'>
+						</pre>
+					<h5>Revert a commit (by producing a new commit with contrary changes)</h5>
+						<pre>git revert <'commit'>
+						</pre>
+					<h5>Reset your HEAD pointer to a previous commit and discard all changes since then</h5>
+						<pre>git reset --hard <'commit'>
+						</pre>
+					<h5>...and preserve all changes as unstaged changes</h5>
+						<pre>git reset <'commit'>
+						</pre>
+					<h5>...and preserve uncommitted local changes</h5>
+						<pre>git reset --keep <'commit'>
+						</pre>	
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h2>VERSION CONTROL</h2>
+		<h5>BEST PRACTICES</h5>
+			<ul>
+				<li>
+					<h3>COMMIT RELATED CHANGES</h3>
+					<p>A commit should be a wrapper for related changes. For example, fixing two different bugs should produce two separate commits. Small commits make it easier for other developers to understand the changes and roll them back if something went wrong. With tools like the staging area and the ability to stage only parts of a file, Git makes it easy to create very granular commits.</p>
+				</li>
+				<li>
+					<h3>COMMIT OFTEN</h3>
+					<p>Committing often keeps your commits small and, again, helps you commit only related changes. Moreover, it allows you to share your code more frequently with others. That way its easier for everyone to integrate changes regularly and avoid having merge conflicts. Having few large commits and sharing them rarely, in contrast, makes it hard to solve conflicts.</p>
+				</li>
+				<li>
+					<h3>DONT COMMIT HALF-DONE WORK</h3>
+					<p>You should only commit code when its completed. This doesnt mean you have to complete a whole, large feature before committing. Quite the contrary: split the features implementation into logical chunks and remember to commit early and often. But dont commit just to have something in the repository before leaving the office at the end of the day. If youre tempted to commit just because you need a clean working copy (to check out a branch, pull in changes, etc.) consider using Gits 'Stash' feature instead.</p>
+				</li>
+				<li>
+					<h3>TEST CODE BEFORE YOU COMMIT</h3>
+					<p>Resist the temptation to commit something that you "think" is completed. Test it thoroughly to make sure it really is completed and has no side effects (as far as one can tell). While committing half-baked things in your local repository only requires you to forgive yourself, having your code tested is even more important when it comes to pushing/sharing your code with others.</p>
+				</li>
+				<li>
+					<h3>WRITE GOOD COMMIT MESSAGES</h3>
+					<p>Begin your message with a short summary of your changes (up to 50 characters as a guideline). Separate it from the following body by including a blank line. The body of your message should provide detailed answers to the following questions:
+						> What was the motivation for the change?
+						> How does it differ from the previous implementation?
+						Use the imperative, present tense('change', not 'changed' or 'changes') to be consistent with generated messages from commands like git merge.</p>
+				</li>
+				<li>
+					<h3>VERSION CONTROL IS NOT A BACKUP SYSTEM</h3>
+					<p>Having your files backed up on a remote server is a nice side effect of having a version control system. But you should not use your VCS like it was a backup system. When doing version control, you should pay attention to committing semantically (see 'related changes')- you shouldnt just cram in files.</p>
+				</li>
+				<li>
+					<h3>USE BRANCHES</h3>
+					<p>Branching is one of Gits most powerful features - and this is not by accident: quick and easy branching was a central requirement from day one. Branches are the perfect tool to help you avoid mixing up different lines of development. You should use branches extensively in your development workflows: for new features, bug fixes, ideas...</p>
+				</li>
+				<li>
+					<h3>AGREE ON A WORKFLOW</h3>
+					<p>Git lets you pick from a lot of different workflows: long-running branches, topic branches, merge or rebase, git-flow... Which one you choose depends on a couple of factors: your project, your overall development and deployment workflows and (maybe most importantly) on your and your teammates personal preferences. However you choose to work, just make sure to agree on a common workflow that everyone follows.</p>
+				</li>
+				<li>
+					<h3>HELP & DOCUMENTATION</h3>
+					<h5>Get help on the command line</h5>
+					<pre>git help <'command;></pre>
+				</li>
+			</ul>
+	</section>
+	<footer>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</footer>
+</body>
+</html>
