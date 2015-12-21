@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Driving through DBC</title>
+    <description>My journey through Dev Bootcamp.</description>
+    <link>http://locahost:4000/</link>
+    <atom:link href="http://locahost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 20 Dec 2015 20:05:47 -0800</pubDate>
+    <lastBuildDate>Sun, 20 Dec 2015 20:05:47 -0800</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>What is Rails?</title>
+        <description>&lt;p&gt;&lt;span class=&quot;image featured&quot;&gt;&lt;img src=&quot;/images/rails.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+Rails is a software library that extends the Ruby programming language. David Heinemeier Hansson is its creator. He gave it the name “Ruby on Rails,” though it is often just called “Rails.”&lt;/p&gt;
+
+&lt;p&gt;It is software code that is added to the Ruby programming language. Technically, it is a package library (specifically, a RubyGem), that is installed using the operating system command-line interface.&lt;/p&gt;
+
+&lt;p&gt;Rails is a framework for building websites. As such, Rails establishes conventions for easier collaboration and maintenance. These conventions are codified as the Rails API (the application programming interface, or directives that control the code). The Rails API is documented online and described in books, articles, and blog posts. Learning Rails means learning how to use the Rails conventions and its API.&lt;/p&gt;
+
+&lt;p&gt;Rails combines the Ruby programming language with HTML, CSS, and JavaScript to create a web application that runs on a web server. Because it runs on a web server, Rails is considered a server-side, or “back end,” web application development platform (the web browser is the “front end”). Later, this article will describe web applications in greater depth and show why a web development framework is needed to build complex websites.&lt;/p&gt;
+
+&lt;p&gt;Rails, in a larger sense, is more than a software library and an API. Rails is the central project of a vast community that produces software libraries that simplify the task of building complex websites. Members of the Rails community share many core values, often use the same tools, and support each other with an informal network that is built on volunteerism. Overlapping the informal community is an economic network that includes jobs, recruiters, consulting firms, conferences, businesses that build websites with Rails, and investors that fund startups. Rails is popular among web startups, significantly because the pool of open source software libraries (RubyGems, or “gems”) makes it possible to build complex sites quickly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How Rails works&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You’re running a web browser on your computer (probably to read this article). A web browser combines three kinds of files—HTML, CSS, and JavaScript—to display web pages. A browser obtains the files from a web server. The web server can be remote (connected by the Internet) or on your own computer (when you are doing development).&lt;/p&gt;
+
+&lt;p&gt;You might have learned how to create HTML, CSS, and JavaScript files. HTML (HyperText Markup Language) is a convention for creating structured documents that combine content (such as text, images, or video) with generic typographic, layout and design elements (such as headlines and tables). CSS (Cascading Style Sheets) directives apply a specific appearance to typographic, layout and design elements. JavaScript is a programming language supported by all web browsers that is used to manipulate HTML and CSS elements, particularly for implementing interactive features such as tabs and modal windows. You can learn about HTML, CSS, and JavaScript in a typical “Introduction to Web Design” course that teaches how to make “static websites.”&lt;/p&gt;
+
+&lt;p&gt;Web servers deliver HTML, CSS, and JavaScript, either from static files that are stored on the server, or from an “application server” that creates files dynamically using a programming language such as Ruby. A software program written in Ruby and organized using Rails conventions is a “web application.” Rails combines the Ruby programming language with HTML, CSS, and JavaScript to create a web application. Rails uses Ruby to dynamically assemble HTML, CSS, and JavaScript files from component files (often adding content from a database).&lt;/p&gt;
+
+&lt;p&gt;Why create a web application? A web browser needs only a single HTML file to display a web page (CSS and JavaScript files are optional). However, if you are creating several web pages, you might want to assemble the HTML file from smaller components. For example, you might make a small file that will be included on every page to make a footer (Rails calls these “partials”). Consider another example: If you are displaying content from a database, you might not want the complex programming code that accesses the database mixed into your HTML (programmers call this separation of concerns and it makes for more modular, maintainable programs). Finally, if you are using a web application server such as the one supplied with Rails, you can add features to your website that have been developed and tested by other people so you don’t have to build everything yourself. These are all reasons to create a web application.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 13 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://locahost:4000/2015/12/13/rails.html</link>
+        <guid isPermaLink="true">http://locahost:4000/2015/12/13/rails.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Javascript!</title>
+        <description>&lt;p&gt;&lt;span class=&quot;image featured&quot;&gt;&lt;img src=&quot;/images/js.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+Alright! We are in week 7 people! Ruby is over and we have now started our journey into JavaScript! I wish we could have started with JS because it seems to teach more fundamentals and show how the coding process works. I think this is due to the fact that JS requires you to create functions in order to do some of the things that Ruby has already built in. I’m looking at you enumerables and built in methods! Anyways lets talk about some of the differences between JS and Ruby.&lt;/p&gt;
+
+&lt;p&gt;Lets look at some syntax differences between Ruby and JS. Setting variables in Ruby is as simple as stating a name and setting a value.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;variable_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;variable_value&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In JS setting a variable is the same with the exception of adding ‘var’ before the name like so.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;variable_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;variable_value&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Lets look at how Hashes look between Ruby and JS. Here is a Ruby Hash.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;hash_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;hash_key: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hash_value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;second_hash_key: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;second_hash_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Easy enough right? A Hash in JS is reffered to as an ‘Object’, the ‘key’ in Ruby is just a variable.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hash_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;hash_key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hash_value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;second_hash_key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;second_hash_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;To get the value of a key in a hash in Ruby you just call the hash like so:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;hash_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:hash_key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hash_value&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;In JS you would call the ‘Object’ to get the value of the key like so:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;hash_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hash_key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hash_value&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now lets look at some looping! What are the differences between Ruby loops and JS loops? Not that much really except that JS is more tedious to write. Lets look at ‘for’ loops below starting with Ruby.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;varibale_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;variable_value&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;#actions&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Simple enough, we set a condition for our variable and run our ‘for’ loop. Lets look at how this is done is JS.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;var_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/*actions*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;It is less readable and includes more syntax like more curly brackets and semicolons. You set the loop within the ‘for’ and your code block inside the curly brackets.&lt;/p&gt;
+
+&lt;p&gt;These are just some simple things that are different with Ruby and JS. The basic fundamentals of each language are the same. They both manipulate objects, have the same types of conditional statements, they have the same comparison operators, and they use the same types of data structures like arrays and hashes. Ruby is a lot more readable than JS and also easier to understand since Ruby has some built in methods to help with what your looking to do. I think JS is more fundamental and helps you understand programming alot better.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 05 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://locahost:4000/2015/12/05/javascript.html</link>
+        <guid isPermaLink="true">http://locahost:4000/2015/12/05/javascript.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Class is in session</title>
+        <description>&lt;p&gt;&lt;span class=&quot;image featured&quot;&gt;&lt;img src=&quot;/images/class.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+So the holidays are starting and I am finding that keeping up with DBC is starting to get difficult. It didn’t think that it would require so much of my time but every week seems to get harder and harder. This week was out third week of learning Ruby and it was during Thanksgiving and all the ridiculous Black Friday sales. I think the best part of this week was learning about Ruby classes.&lt;/p&gt;
+
+&lt;p&gt;During the beginning I learned that everything in Ruby is an object. Everything we have been learning originally stems from an object. We learned to add methods and create properties to already existing objects. Now we can create those objects and add our own methods and properties by creating a new object class. We can start a new class using this syntax:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;We will use this example to create our new Person class. When creating a class we can give it an auto setup or some sort of code that automatically gives that class some properties. In Ruby we call this a constructor method. When creating a class the contructor method is named initialize and we can go ahead and put some properties to our Person class using this method.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now we have some properties, name and age, to our Person class. You may have noticed that theres an ‘@’ symbol there. That creates an instance variable, which we can use throughout the instance of this class. Pretty cool huh. Now we can create instance methods and use the instance variables we just made. Like this!&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;greet&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; says, &#39;Hello there!&#39;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Now that we have created our class, given it some properties and made a method to use those properties, lets see how we can use these. We can now create a new instance of our class below and call the method we created.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;# this will create an instance of our Person class&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;James&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# this will call the greet method on the new instance of Person&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;new_person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;greet&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# this will be the output&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;James&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;says&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Hello there!&#39;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;As you can see creating classes is very useful in Ruby. It allows us create instances so that we don’t have to keep repeating code. A class is like the blueprint for any object we create so having that blueprint allows us to create or modify that object multiple times. I hope I explained classes simple enough to understand. I wanted to go over the basics so we can have a good foundation on creating a class. I can always expand on this so let me know!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Nov 2015 00:00:00 -0800</pubDate>
+        <link>http://locahost:4000/2015/11/30/ruby-classes.html</link>
+        <guid isPermaLink="true">http://locahost:4000/2015/11/30/ruby-classes.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Enumerabararraabless</title>
+        <description>&lt;p&gt;&lt;span class=&quot;image featured&quot;&gt;&lt;img src=&quot;/images/methodchain.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+The weeks are getting harder and harder! This time we are in our second week of coding with Ruby and what a week it was. This week got a bit more advanced and a bit more confusing but im slowly understanding things. Lets talk Enumerables. Yeah its kinda hard to say at first that why my title was like that haha. Ruby’s enumerable module has built in methods for all kinds of things which operate in a collection. Its like trying to use the “each” method when trying to iterate over something but there is a enumerable that does this for what you want to do. So what does enumerable actually mean? The Enumerable module gives objects of collection classes additional collection-specific behaviors. The class requiring the Enumerable module must have an #each method because the additional collection-specific behaviors given by Enumerable are defined in terms of #each. Lets give you an example of one of the enumerable methods, map!&lt;/p&gt;
+
+&lt;p&gt;What is map? The map method takes an enumerable object and a block, and runs the block for each element, outputting each returned value from the block. Map can be used non-destructively and destructively by implementing a “!” symbol after it. Basically lets say you have an array of strings and you want to iterate over those strings one by one and add to them or change them.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;# Here we have an array with 3 string elements&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;b&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;c&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# We use .map on our array to iterate through the array and add a &quot;!&quot; to each string in the array&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;my_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&quot;c1&quot;&gt;# This is what we get in return&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;a!&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;b!&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;c!&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;So as you can see, instead of using .each we just used .map. There are other methods similar to this in which you can iterate and modify the given object. So why not use .each like we always do? The difference is .each executes the given block for each element of the array, then returns the array itself. While .map also executes the given block for each element of the array, but returns a new array whose values are the return values of each iteration of the block. Collect is also an enumerable and does the same thing as what map does. Like everything else in Ruby there are more ways than 1 to do things.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Nov 2015 00:00:00 -0800</pubDate>
+        <link>http://locahost:4000/2015/11/21/enumerables.html</link>
+        <guid isPermaLink="true">http://locahost:4000/2015/11/21/enumerables.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Array here, Hash there?</title>
+        <description>&lt;p&gt;&lt;span class=&quot;image featured&quot;&gt;&lt;img src=&quot;/images/ruby.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+We are at the end of week 4 and my head is burnt out on math and conditional statements! We did a huge refresh on the Ruby language this week and boy what a refresh it was. It started on a pretty easy review of basic Ruby like variables and methods, stuff that we sort of learned before starting phase 0. Then thats when it got harder for me. It went on to control flow with conditional statements and then we had to start thinking about math processes. Math that I haven’t done since high school! This stuff really picked at my brain and got me super frustrated. After all that it went on to Arrays and Hashes. What a review huh.&lt;/p&gt;
+
+&lt;p&gt;What is an Array and what is a Hash? Lets start with an Array. An Array is a list of objects that are indexed by an integer. It could be a list of strings, numbers or even have an array inside an array. The list is numbered starting from 0. So if we were to have an array with 5 objects in it, we would number them from 0 to 4. Think of a grocery list with 5 items in it. If I wanted to see what the third item on the list was I would look for the number 2 since 0 would be the first and 1 would be the second on the list. Here is an example of an Array.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;my_array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;We have named the array “my_array” and whatever is inside the array is denoted with brackets. We have 3 objects inside of our array and the 3 objects are numbered or indexed starting with 0. So object1 would be 0 on the list and object2 would be 1 on the list and then object3 would be 2 on the list. The values in an Array can be accessed by its index number.&lt;/p&gt;
+
+&lt;p&gt;Lets look into Hashes now. A Hash in like an Array as it is also a list of objects, but the difference is a Hash is indexed by another object resulting in a key and value pair. In an Array the key would be its number or index number, on the list and its value is the objects. Meanwhile in a Hash, the key is another object representing a value of another object. Lets go back to our grocery list shall we. If we made out grocery list into a hash and had 5 items on the list, we can also put the price of each item next to it. So our key would be the item, say ice cream, and then we would then give it a value of $3. In a Hash we would have pairs of keys and values and we can access those values by calling on its key. Here is an example of a Hash.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;my_hash&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+			   &lt;span class=&quot;n&quot;&gt;object2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+			   &lt;span class=&quot;n&quot;&gt;object3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here we named our Hash “my_hash” and whatever is inside the hash is denoted with curly brackets. We have 3 key:value pairs in our hash. Object1 is tied to value1 and object2 is tied to its value2, so on and so forth. A Hash is similar to an Array except its values are not accessed by an index number. If we wanted to get value3 we would then have to call on object3. The values in a Hash are accessed by another object.&lt;/p&gt;
+
+&lt;p&gt;Choosing which to use is entirely up to you and what type of list or code you are writing. I think that for something simple that you just need to make a numbered list for I would go with an Array. If you wanted to create something more complicated that has multiple things with multiple values I would go with a Hash.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Nov 2015 00:00:00 -0800</pubDate>
+        <link>http://locahost:4000/2015/11/14/arrays-hashes.html</link>
+        <guid isPermaLink="true">http://locahost:4000/2015/11/14/arrays-hashes.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>About CSS!?</title>
+        <description>&lt;p&gt;&lt;span class=&quot;image featured&quot;&gt;&lt;img src=&quot;/images/htmlcss.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+Hey everyone! Second post and I already find myself showing off what I learned! We are currently in week 3 of the program and this week we are learning all about CSS. CSS stands for Cascading Style Sheet. It is used in creating the styling part of a website and goes hand in hand with HTML. This week was tough for me because I spent a lot of time on the styling of my webpage. I wanted it a certain way and could not stand it when it wasnt going the way I wanted. The best part is, once your done with CSS your webpage will look amazing and just the way you want it!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/boxmodel.png&quot; alt=&quot;My helpful screenshot&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the biggest challenges in CSS is knowing the difference between the margin, border, and padding of an element. We can think of elements on our webpage to be like boxes. The properties of margin, border, and padding are boxes that go around the element. We can use the picture above to decribe this box model. Lets start with padding. Padding is the space between the elements content and its border. If you drew a box around your element, then the space between those boxes is your padding. Next up is our border. The border is what surrounds your elements content. The line that you drew around your element is considered the elements border. By this time you can pretty much guess where were going with this. The margin is the space between your elements border and the edge of your page. As you can see these properties are pretty important when styling a webpage. Knowing the size of your boxes and its position is critical in organizing your page the way you want it.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 07 Nov 2015 00:00:00 -0800</pubDate>
+        <link>http://locahost:4000/2015/11/07/about-css.html</link>
+        <guid isPermaLink="true">http://locahost:4000/2015/11/07/about-css.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>The First Week</title>
+        <description>&lt;p&gt;&lt;span class=&quot;image featured&quot;&gt;&lt;img src=&quot;/images/github1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+The first week of Devbootcamp is almost over! It feels like the week went by so fast! Its already friday and I have learned so much this week its crazy. So far we learned how to use the command line, whether it be using the terminal for mac users or the command prompt for windows and we also learned alot about version control using Git and GitHub. I actually had some experience learning some of the basic stuff beforehand but actually writing them and going through the process really helps to understand the concepts. With the command line, it will really help you to memorize the different commands and what they do. It also helps to use the terminal to do every single task without using your mouse so that you get used to it. Knowing how to navigate your terminal, create, modify and remove things are super mandatory for whats to come. Just knowing the commands and actually using my terminal, Im already starting to feel like a programmer!&lt;/p&gt;
+
+&lt;p&gt;After the command line, we learned about version control. What is version control? Basically version control takes your project and creates versions or copies of it. Those copies can then be modified individually at the same time without affecting the original and then be merged back to the original. That means that if you are working in a group then everyone can work on the same project without affecting each others changes. This is awesome because its very fast and very efficient. You can also go back to different versions in case there are problems or bugs. It saves all the different points in your work so that you can go back to them if you want. Git is the program we learned to use for version control and its awesome. Github is the website where we send our projects to be compiled, changed, or pulled from by anyone.&lt;/p&gt;
+
+&lt;p&gt;GitHub is like the all time mecca for code. Why use GitHub you ask? Its lightning quick and everyone uses it. Its like the dropbox for code! That means everyone can access everyone elses work, clone it, and work on it themselves. Its great for team projects or anything that requires multiple people to do. Its easy to use and easy to understand. I think learning Git is the hard part and learning how to use GitHub is easier. Once I get more used to using Git and GitHub I think that organizing and working on my projects will definitely be alot more fluid. I wanna learn more and start making some cool stuff. Im excited for the weeks to come!&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 23 Oct 2015 00:00:00 -0700</pubDate>
+        <link>http://locahost:4000/first-post.html</link>
+        <guid isPermaLink="true">http://locahost:4000/first-post.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

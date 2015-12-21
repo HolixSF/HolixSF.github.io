@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <!--
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<head>
+    <title>What is Rails?</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="My journey through Dev Bootcamp.">
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/jquery.scrollgress.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-layers.min.js"></script>
+    <script src="/js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="/css/skel.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-wide.css" />
+        <link rel="stylesheet" href="/css/style-noscript.css" />
+    </noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="canonical" href="http://locahost:4000/2015/12/13/rails.html">
+</head>
+
+
+  <body class="no-sidebar">
+
+    <header id="header">
+				<h1 id="logo"><a href="/">'Spirited Driving'</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="/">Welcome</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+						<li class="submenu">
+							<a href="">Projects</a>
+							<ul>
+								<li><a href="">Phase0 Cheat Sheet</a></li>
+								<!-- <li><a href="/right-sidebar.html">Right Sidebar</a></li>
+								<li><a href="/no-sidebar.html">No Sidebar</a></li> -->
+								<!-- <li><a href="/contact.html">Contact</a></li> -->
+								<!-- <li class="submenu">
+									<a href="">Submenu</a>
+									<ul>
+										<li><a href="#">Dolore Sed</a></li>
+										<li><a href="#">Consequat</a></li>
+										<li><a href="#">Lorem Magna</a></li>
+										<li><a href="#">Sed Magna</a></li>
+										<li><a href="#">Ipsum Nisl</a></li>
+									</ul>
+								</li> -->
+							</ul>
+						</li>
+						<li><a href="/">Resume</a></li>
+						<li><a href="/contact.html">Contact</a></li>
+						<!-- <li><a href="#" class="button special">Sign Up</a></li> -->
+					</ul>
+				</nav>
+			</header>
+    <div class="page-content">
+            <article id="main">
+  <header class="special container">
+    <span class="icon fa-rss"></span>
+    <h2 class="post-title">What is Rails?</h2>
+    <p class="post-meta">Dec 13, 2015</p>
+  </header>
+
+  <section class="style4 wrapper container">
+    <p><span class="image featured"><img src="/images/rails.jpg" alt="" /></span>
+Rails is a software library that extends the Ruby programming language. David Heinemeier Hansson is its creator. He gave it the name “Ruby on Rails,” though it is often just called “Rails.”</p>
+
+<p>It is software code that is added to the Ruby programming language. Technically, it is a package library (specifically, a RubyGem), that is installed using the operating system command-line interface.</p>
+
+<p>Rails is a framework for building websites. As such, Rails establishes conventions for easier collaboration and maintenance. These conventions are codified as the Rails API (the application programming interface, or directives that control the code). The Rails API is documented online and described in books, articles, and blog posts. Learning Rails means learning how to use the Rails conventions and its API.</p>
+
+<p>Rails combines the Ruby programming language with HTML, CSS, and JavaScript to create a web application that runs on a web server. Because it runs on a web server, Rails is considered a server-side, or “back end,” web application development platform (the web browser is the “front end”). Later, this article will describe web applications in greater depth and show why a web development framework is needed to build complex websites.</p>
+
+<p>Rails, in a larger sense, is more than a software library and an API. Rails is the central project of a vast community that produces software libraries that simplify the task of building complex websites. Members of the Rails community share many core values, often use the same tools, and support each other with an informal network that is built on volunteerism. Overlapping the informal community is an economic network that includes jobs, recruiters, consulting firms, conferences, businesses that build websites with Rails, and investors that fund startups. Rails is popular among web startups, significantly because the pool of open source software libraries (RubyGems, or “gems”) makes it possible to build complex sites quickly.</p>
+
+<p><strong>How Rails works</strong></p>
+
+<p>You’re running a web browser on your computer (probably to read this article). A web browser combines three kinds of files—HTML, CSS, and JavaScript—to display web pages. A browser obtains the files from a web server. The web server can be remote (connected by the Internet) or on your own computer (when you are doing development).</p>
+
+<p>You might have learned how to create HTML, CSS, and JavaScript files. HTML (HyperText Markup Language) is a convention for creating structured documents that combine content (such as text, images, or video) with generic typographic, layout and design elements (such as headlines and tables). CSS (Cascading Style Sheets) directives apply a specific appearance to typographic, layout and design elements. JavaScript is a programming language supported by all web browsers that is used to manipulate HTML and CSS elements, particularly for implementing interactive features such as tabs and modal windows. You can learn about HTML, CSS, and JavaScript in a typical “Introduction to Web Design” course that teaches how to make “static websites.”</p>
+
+<p>Web servers deliver HTML, CSS, and JavaScript, either from static files that are stored on the server, or from an “application server” that creates files dynamically using a programming language such as Ruby. A software program written in Ruby and organized using Rails conventions is a “web application.” Rails combines the Ruby programming language with HTML, CSS, and JavaScript to create a web application. Rails uses Ruby to dynamically assemble HTML, CSS, and JavaScript files from component files (often adding content from a database).</p>
+
+<p>Why create a web application? A web browser needs only a single HTML file to display a web page (CSS and JavaScript files are optional). However, if you are creating several web pages, you might want to assemble the HTML file from smaller components. For example, you might make a small file that will be included on every page to make a footer (Rails calls these “partials”). Consider another example: If you are displaying content from a database, you might not want the complex programming code that accesses the database mixed into your HTML (programmers call this separation of concerns and it makes for more modular, maintainable programs). Finally, if you are using a web application server such as the one supplied with Rails, you can add features to your website that have been developed and tested by other people so you don’t have to build everything yourself. These are all reasons to create a web application.</p>
+
+  </section>
+    
+    <footer>
+        
+        <a href="/2015/12/05/javascript.html" class="post-prev">&larr; Previous post</a> 
+        
+    </footer>
+</article>
+
+
+    </div>
+    <!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+        <li><a href="https://twitter.com/Holix_SF" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="https://www.facebook.com/luis.decastro.52" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="https://plus.google.com/115114655646876917889" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+        <li><a href="https://github.com/HolixSF" class="icon circle fa-github"><span class="label">Github</span></a></li>
+        <li><a href="https://www.linkedin.com/in/luis-de-castro-b1627b82" class="icon circle fa-linkedin"><span class="label">LinkedIn</span></a></li>
+    </ul>
+
+    <ul class="copyright">
+        <li>&copy; Luis De Castro. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+
+</footer>
+
+  </body>
+
+</html>
