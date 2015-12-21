@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+  <!--
+	Twenty by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<head>
+    <title>Javascript!</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="My journey through Dev Bootcamp.">
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/jquery.scrollgress.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-layers.min.js"></script>
+    <script src="/js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="/css/skel.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-wide.css" />
+        <link rel="stylesheet" href="/css/style-noscript.css" />
+    </noscript>
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="canonical" href="http://locahost:4000/2015/12/05/javascript.html">
+</head>
+
+
+  <body class="no-sidebar">
+
+    <header id="header">
+				<h1 id="logo"><a href="/">'Spirited Driving'</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="/">Welcome</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+						<li class="submenu">
+							<a href="">Projects</a>
+							<ul>
+								<li><a href="">Phase0 Cheat Sheet</a></li>
+								<!-- <li><a href="/right-sidebar.html">Right Sidebar</a></li>
+								<li><a href="/no-sidebar.html">No Sidebar</a></li> -->
+								<!-- <li><a href="/contact.html">Contact</a></li> -->
+								<!-- <li class="submenu">
+									<a href="">Submenu</a>
+									<ul>
+										<li><a href="#">Dolore Sed</a></li>
+										<li><a href="#">Consequat</a></li>
+										<li><a href="#">Lorem Magna</a></li>
+										<li><a href="#">Sed Magna</a></li>
+										<li><a href="#">Ipsum Nisl</a></li>
+									</ul>
+								</li> -->
+							</ul>
+						</li>
+						<li><a href="/">Resume</a></li>
+						<li><a href="/contact.html">Contact</a></li>
+						<!-- <li><a href="#" class="button special">Sign Up</a></li> -->
+					</ul>
+				</nav>
+			</header>
+    <div class="page-content">
+            <article id="main">
+  <header class="special container">
+    <span class="icon fa-rss"></span>
+    <h2 class="post-title">Javascript!</h2>
+    <p class="post-meta">Dec 5, 2015</p>
+  </header>
+
+  <section class="style4 wrapper container">
+    <p><span class="image featured"><img src="/images/js.jpg" alt="" /></span>
+Alright! We are in week 7 people! Ruby is over and we have now started our journey into JavaScript! I wish we could have started with JS because it seems to teach more fundamentals and show how the coding process works. I think this is due to the fact that JS requires you to create functions in order to do some of the things that Ruby has already built in. I’m looking at you enumerables and built in methods! Anyways lets talk about some of the differences between JS and Ruby.</p>
+
+<p>Lets look at some syntax differences between Ruby and JS. Setting variables in Ruby is as simple as stating a name and setting a value.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="n">variable_name</span> <span class="o">=</span> <span class="n">variable_value</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>In JS setting a variable is the same with the exception of adding ‘var’ before the name like so.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="kd">var</span> <span class="nx">variable_name</span> <span class="o">=</span> <span class="nx">variable_value</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Lets look at how Hashes look between Ruby and JS. Here is a Ruby Hash.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="n">hash_name</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">hash_key: </span><span class="n">hash_value</span> <span class="p">,</span> <span class="ss">second_hash_key: </span><span class="n">second_hash_value</span><span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Easy enough right? A Hash in JS is reffered to as an ‘Object’, the ‘key’ in Ruby is just a variable.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="kd">var</span> <span class="nx">hash_name</span> <span class="o">=</span> <span class="p">{</span> <span class="na">hash_key</span><span class="p">:</span> <span class="nx">hash_value</span> <span class="p">,</span> <span class="na">second_hash_key</span><span class="p">:</span> <span class="nx">second_hash_value</span><span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>To get the value of a key in a hash in Ruby you just call the hash like so:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="n">hash_name</span><span class="p">[</span><span class="ss">:hash_key</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="n">hash_value</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>In JS you would call the ‘Object’ to get the value of the key like so:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nx">hash_name</span><span class="p">.</span><span class="nx">hash_key</span> <span class="o">-&gt;</span> <span class="nx">hash_value</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Now lets look at some looping! What are the differences between Ruby loops and JS loops? Not that much really except that JS is more tedious to write. Lets look at ‘for’ loops below starting with Ruby.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="k">for</span> <span class="n">varibale_name</span> <span class="o">!=</span> <span class="n">variable_value</span> <span class="k">do</span>
+  <span class="c1">#actions</span>
+   <span class="k">end</span>
+<span class="k">end</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Simple enough, we set a condition for our variable and run our ‘for’ loop. Lets look at how this is done is JS.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">!==</span> <span class="nx">var_value</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>  <span class="p">{</span><span class="cm">/*actions*/</span><span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>It is less readable and includes more syntax like more curly brackets and semicolons. You set the loop within the ‘for’ and your code block inside the curly brackets.</p>
+
+<p>These are just some simple things that are different with Ruby and JS. The basic fundamentals of each language are the same. They both manipulate objects, have the same types of conditional statements, they have the same comparison operators, and they use the same types of data structures like arrays and hashes. Ruby is a lot more readable than JS and also easier to understand since Ruby has some built in methods to help with what your looking to do. I think JS is more fundamental and helps you understand programming alot better.</p>
+
+
+  </section>
+    
+    <footer>
+        
+        <a href="/2015/11/30/ruby-classes.html" class="post-prev">&larr; Previous post</a> 
+        
+        <a href="/2015/12/13/rails.html" class="post-next">Next post &rarr;</a> 
+    </footer>
+</article>
+
+
+    </div>
+    <!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+        <li><a href="https://twitter.com/Holix_SF" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="https://www.facebook.com/luis.decastro.52" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="https://plus.google.com/115114655646876917889" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+        <li><a href="https://github.com/HolixSF" class="icon circle fa-github"><span class="label">Github</span></a></li>
+        <li><a href="https://www.linkedin.com/in/luis-de-castro-b1627b82" class="icon circle fa-linkedin"><span class="label">LinkedIn</span></a></li>
+    </ul>
+
+    <ul class="copyright">
+        <li>&copy; Luis De Castro. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+
+</footer>
+
+  </body>
+
+</html>
