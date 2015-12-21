@@ -7,11 +7,11 @@ description: My journey through Dev Bootcamp.
 #   line in _config.yml. It will appear in your document head meta (for
 #   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://locahost:4000" # the base hostname & protocol for your site
+url: "http://holixsf.github.io/" # the base hostname & protocol for your site
 twitter_username: HolixSF
 github_username:  HolixSF
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 
