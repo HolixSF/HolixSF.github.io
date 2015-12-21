@@ -755,7 +755,7 @@
 .highlight, .highlight .w {
   color: #93a1a1;
   background-color: #002b36;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .highlight .err {
   color: #151515;
