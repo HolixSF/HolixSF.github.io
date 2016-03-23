@@ -1,172 +1,239 @@
----
-layout: landing-page
----		
-		<!-- Main -->
-			<article id="main">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  	<!-- If IE use the latest rendering engine -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Set the page to the width of the device and set the zoom level -->
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Roboto|Inconsolata' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
-				<header class="special container">
-					<span class="icon fa-car"></span>
-					<h2>My name is <strong>Luis De Castro</strong>
-					<br />
-					current student at <strong>Dev BootCamp</strong> and
-					<br />
-					future web developer.</h2>
-					<p>I am currently living in San Francisco CA, and attending the program here.
-					<br />
-					My current hobbies aside from coding include gaming, and building project cars.
-					<br />
-					Check me out!
-					<!-- released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun! --></p>
-				</header>
-					
-				<!-- One -->
-<!-- 					<section class="wrapper style2 container special-alt">
-						<div class="row half">
-							<div class="8u">
-							
-								<header>
-									<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
-								</header>
-								<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-								<footer>
-									<ul class="buttons">
-										<li><a href="#" class="button">Find Out More</a></li>
-									</ul>
-								</footer>
-							
-							</div>
-							<div class="4u skel-cell-important">
-							
-								<ul class="featured-icons">
-									<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-									<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-									<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-									<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-									<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-									<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
-								</ul>
-							
-							</div>				
-						</div>
-					</section> -->
-					
-				<!-- Two -->
-					<!-- <section class="wrapper style1 container special">
-						<div class="row">
-							<div class="4u">
-							
-								<section>
-									<span class="icon featured fa-check"></span>
-									<header>
-										<h3>This is Something</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-								</section>
-							
-							</div>
-							<div class="4u">
-							
-								<section>
-									<span class="icon featured fa-check"></span>
-									<header>
-										<h3>Also Something</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-								</section>
-							
-							</div>
-							<div class="4u">
-							
-								<section>
-									<span class="icon featured fa-check"></span>
-									<header>
-										<h3>Probably Something</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-								</section>
-							
-							</div>
-						</div>
-					</section> -->
-					
-				<!-- Three -->
-					<!-- <section class="wrapper style3 container special">
-					
-						<header class="major">
-							<h2>Next look at this <strong>cool stuff</strong></h2>
-						</header>
-						
-						<div class="row">
-							<div class="6u">
-							
-								<section>
-									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-									<header>
-										<h3>A Really Fast Train</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-								</section>
+  <title>HolixSF</title>
+</head>
 
-							</div>
-							<div class="6u">
-							
-								<section>
-									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<header>
-										<h3>An Airport Terminal</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-								</section>
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body class="text-shadows">
 
-							</div>
-						</div>
-						<div class="row">
-							<div class="6u">
-							
-								<section>
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<header>
-										<h3>Hyperspace Travel</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-								</section>
+<nav class="mainmenu">
+	<div class="container">
+		<div class="dropdown">
+			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#head" class="active">Hello</a></li>
+				<li><a href="#about">About me</a></li>
+				<li><a href="#themes">Projects</a></li>
+				<li><a href="#contact">Get in touch</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
-							</div>
-							<div class="6u">
-							
-								<section>
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<header>
-										<h3>And Another Train</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-								</section>
 
-							</div>
-						</div>
+<!-- Main (Home) section -->
+<section class="section" id="head">
+	<div class="container">
 
-						<footer class="major">
-							<ul class="buttons">
-								<li><a href="#" class="button">See More</a></li>
-							</ul>
-						</footer>
-					
-					</section>
-					
-			</article> -->
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center home">	
 
-		<!-- CTA -->
-			<section id="cta">
-			
-				<header>
-					<h2>Take a <strong>ride</strong> through my blog</h2>
-					<p>A collection of posts on what I have learned every week in DBC.</p>
-				</header>
-				<footer>
-					<ul class="buttons">
-						<!-- <li><a href="#" class="button">Take My Money</a></li> -->
-						<li><a href="/blog.html" class="button">BLOG</a></li>
+				<!-- Site Title, your name, HELLO msg, etc. -->
+				<h1 class="title">Hi I'm Lu</h1>
+				<h2 class="subtitle">I do cool things, like</h2>
+				<div id="message" class="carousel slide" data-ride="carousel" data-interval="4000">
+					<div class="carousel-inner" role="listbox">
+					    <div class="item active">
+							<h2 class="subtitle-2"><i class="fa fa-code-fork"></i> Software Development</h2>
+					    </div>
+
+					    <div class="item">
+					    	<h2 class="subtitle-2"><i class="fa fa-wrench"></i> Build Cars</h2>
+					    </div>
+
+					    <div class="item">
+					      	<h2 class="subtitle-2"><i class="fa fa-music"></i> Play the Ukulele</h2>
+					    </div>
+
+					    <!-- <div class="item">
+					      	<h2 class="subtitle-2"></h2>
+					    </div> -->
+					</div>
+				</div>
+
+				<!-- Short introductory (optional) -->
+				<!-- <h3 class="tagline">
+					Potentially, the best place to tell people why they are here.<br>
+					blah blah blah blah
+				</h3> -->
+				
+				<!-- Nice place to describe your site in a sentence or two -->
+				<!-- <p><a href="" class="btn btn-default btn-lg"></a></p> -->
+	
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	
+	</div>
+</section>
+
+<!-- Second (About) section -->
+<section class="section" id="about">
+	<div class="container">
+	
+		<h2 class="text-center title">Who is this guy?</h2>
+		<div class="row">
+			<div class="col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1">
+				<img class="profile-pic" src="assets/imgs/DBC_full3.png" alt="Profile Picture">
+			</div>
+			<div class="col-sm-5 col-md-5" id="bio">    
+				<h5><strong>About Me<br></strong></h5>
+				<p>My name is Luis De Castro. I'm a software developer looking for new opportunities and learning the newest technologies in this ever changing industry.</p>
+				<p>Ever since I was a kid I loved to create and build things. I played with Legos a lot and I believe thats where my passion and creativity came from. I then moved onto building and modifying cars during my teens. Taking something so ordinary and transforming it with your own style into something cool is the best best feeling in the world. From classic imports all the way to modern racecars, I love them all.</p>
+				<p>Transitioning into software development means I can take that same passion and creativity and create something meaningful. I want to take a simple idea and transform it into something awesome.</p>
+				<p>I'm happy to work on the next big thing with you so don't hesitate to get in contact with me. You can usually find me either at some coffee shop, drinking coffee and coding away at the next project or cruising in my 1974 BMW 2002.</p>
+				<div class="bio-links pull-left">
+					<ul>
+						<li><a href="https://github.com/HolixSF"><i class="fa fa-github-square fa-4x"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/holixsf"><i class="fa fa-linkedin-square fa-4x"></i></a></li>
 					</ul>
-				</footer>
-			
-			</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Third (Works) section -->
+<section class="section" id="themes">
+	<div class="container">
+	
+		<h2 class="text-center title">Projects</h2>
+		<!-- <p class="lead text-center">
+			blah blah blah blah blah
+		</p> -->
+		<div class="row">
+			<div class="col-md-4 col-md-offset-2 col-sm-6">
+				<div class="thumbnail view">
+					<img src="assets/imgs/tap.png" alt="Thermo-Aggregation-Project">
+					<div class="caption">
+						<h2>T.A.P.</h2>
+						<p>An open-source application to alert public health officials about communities that may be at high risk for flu and infectious disease outbreaks using an Arduino microcontroller.</p>
+						<a class="info" href="https://github.com/WALTERKERR/TAP" class="btn btn-primary" role="button">learn more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="thumbnail view">
+					<img src="assets/imgs/connect-four.png" alt="Connect Four">
+					<div class="caption">
+						<h2>Connect Four</h2>
+						<p>A Connect Four game with music created as a fun group project.</p>
+						<a class="info" href="https://github.com/HolixSF/connect-four" class="btn btn-primary" role="button">see more</a>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="col-md-4 col-md-offset-2 col-sm-6">
+				<div class="thumbnail view">
+					<img src="assets/imgs/connect-four.png" alt="Connect Four">
+					<div class="caption">
+						<h2>Connect Four</h2>
+						<p>A Connect Four game with music created as a fun group project. </p>
+						<a class="info" href="https://github.com/HolixSF/connect-four" class="btn btn-primary" role="button">see more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="thumbnail view">
+					<img src="" alt="">
+					<div class="caption">
+						<h2>Thumbnail label</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<a class="info" href="#" class="btn btn-primary" role="button">read more</a>
+					</div>
+				</div>
+			</div> -->
+
+		</div>
+
+	</div>
+</section>
+
+<!-- Fourth (Contact) section -->
+<section class="section" id="contact">
+	<div class="container">
+		<h2 class="text-center title">Drop Me A Line</h2>
+		
+		<div class="row" >
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 text-center" id="box">                       
+			    <form class="form-horizontal" action="http://formspree.io/luisdecastro510@gmail.com" method="post" id="contact_form">
+					<fieldset>
+					<!-- Form Name -->
+					<!-- Text input-->
+						<div class="form-group form-top">
+							<div class="col-sm-6 col-md-6">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+									<input name="name" placeholder="Name" class="form-control" type="text">
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6">
+			                    <div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+					                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+	                            </div>
+							</div>
+						</div>         
+				    <!-- Text input-->
+						<div class="form-group">
+							<div class="col-md-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-pushpin"></i></span>
+					                <input name="subject" placeholder="Subject" class="form-control" type="text">
+	                            </div>
+				            </div>
+					    </div>
+			        <!-- Text input-->
+						<!-- <div class="form-group">
+							<div class="col-md-12">
+			                    <div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+					                <input name="phone" placeholder="(005)501-120101" class="form-control" type="text">
+	                            </div>
+							</div>
+			            </div> -->
+			        <!-- Text input-->
+						<div class="form-group">
+							<div class="col-md-12 inputGroupContainer">
+								<div class="input-group">
+					                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+	                                <textarea class="form-control" name="message" placeholder="Message"></textarea>
+								</div>
+				            </div>
+                        </div>
+						<div class="form-group send-button">
+							<div class="col-md-12">
+			                    <button type="submit" class="btn btn-warning text-center">Send <span class="glyphicon glyphicon-send"></span></button>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- <section id="thankyou">
+	<div class="container">
+		<h2>Thank you!</h2>
+		<h4>I'll get in touch with you soon!</h4>
+	</div>
+</section> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
